@@ -4,6 +4,10 @@ project(opengv CXX)
 set (OPENGV_VERSION_MAJOR 1)
 set (OPENGV_VERSION_MINOR 0)
 
+add_definitions(-D__ARM_NEON__)
+add_definitions(-D__arm__)
+add_definitions(-D__M_ARM__)
+
 # Set the build type.  Options are:
 #
 #  None (CMAKE_C_FLAGS or CMAKE_CXX_FLAGS used)
